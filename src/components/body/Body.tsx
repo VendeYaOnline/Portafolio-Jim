@@ -1,14 +1,51 @@
+"use client";
+
 import Image from "next/image";
 import classes from "./Body.module.css";
 import Poster from "/public/poster.jpg";
 import { Poppins } from "next/font/google";
 import { ChevronRight } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 const poppins = Poppins({ subsets: ["latin"], weight: "500" });
 
 const Body = () => {
+  const [isInView, setIsInView] = useState(false);
+  const elementRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0];
+        setIsInView(entry.isIntersecting);
+      },
+      {
+        root: null, // Use the viewport as the container
+        rootMargin: "0px",
+        threshold: 0.1, // Adjust this value to control when the element is considered "in view"
+      }
+    );
+
+    if (elementRef.current) {
+      observer.observe(elementRef.current);
+    }
+
+    return () => {
+      if (elementRef.current) {
+        observer.unobserve(elementRef.current);
+      }
+    };
+  }, []);
+
   return (
     <section className={classes["container-body"]}>
-      <h1 className={poppins.className}>Proyectos</h1>
+      <h1
+        className={`${poppins.className} ${
+          isInView ? classes["faden-up"] : ""
+        }`}
+        ref={elementRef}
+      >
+        Proyectos
+      </h1>
       <div className={classes.dividor} />
       <div className={classes["container-project"]}>
         <div className={classes.project}>
