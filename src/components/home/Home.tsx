@@ -12,10 +12,12 @@ const Home = () => {
     const image = document.querySelector(`.${classes["home-image"]}`);
     const textElement = document.querySelector(`.${classes["home-text"]}`);
     const textFooter = document.querySelector(`.${classes["footer-home"]}`);
-    if (image && textElement && textFooter) {
+    const divider = document.querySelector(`.${classes["divider-home"]}`);
+    if (image && textElement && textFooter && divider) {
       image.classList.add(classes["zoom-in"]);
       textElement.classList.add(classes["animate-text"]);
       textFooter.classList.add(classes["footer-home-animation"]);
+      divider.classList.add(classes["divider-home-animation"]);
     }
   }, []);
 
@@ -26,6 +28,7 @@ const Home = () => {
           Diseñando espacios,
           <br /> construyendo sueños
         </h1>
+        <div className={classes["divider-home"]} />
       </div>
       <Image
         src={ImageHeader}
@@ -35,17 +38,6 @@ const Home = () => {
       />
       <div className={classes["footer-home"]}>
         <p className="w-[600px] mt-10">
-          Arquitecto recién graduado con experiencia en diseño y planificación
-          de espacios. Me apasiona crear entornos que mejoran la calidad de vida
-          de las personas.
-        </p>
-        <button className={classes["button-contact"]}>Contactar</button>
-      </div>
-
-      <div
-        className={`animate__animated animate__fadeInUp animate__delay-1s ${classes["footer-home-mobil"]}`}
-      >
-        <p>
           Arquitecto recién graduado con experiencia en diseño y planificación
           de espacios. Me apasiona crear entornos que mejoran la calidad de vida
           de las personas.
