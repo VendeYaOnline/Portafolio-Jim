@@ -1,0 +1,86 @@
+.container-knowledge {
+  width: 94%;
+  padding: 20px;
+  margin: auto;
+  margin-top: 100px;
+  gap: 100px;
+}
+
+.container-knowledge > h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #5d8a84;
+}
+
+.father-knowledges {
+  display: flex;
+  gap: 100px;
+}
+
+.dividor {
+  height: 1px;
+  background-color: #5d8a84;
+  margin-bottom: 50px;
+  transition: 1.5s ease-in;
+}
+
+.dividor-2 {
+  height: 1px;
+  background-color: black;
+  width: 100%;
+  margin: 50px 0px;
+}
+
+.knowledges {
+  display: flex;
+  gap: 20px;
+}
+
+.content > h2 {
+  font-size: 40px;
+}
+
+.image-web {
+  display: block;
+}
+
+.image-mobil {
+  display: none;
+}
+
+@media (max-width: 1921px) {
+  .image-web {
+    display: none;
+  }
+
+  .image-mobil {
+    display: block;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .content > h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1402px) {
+  .knowledges {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 694px) {
+  .father-knowledges {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-mobil {
+    margin: auto;
+  }
+  .container-knowledge > h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+}

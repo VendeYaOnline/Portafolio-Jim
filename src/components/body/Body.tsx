@@ -16,12 +16,15 @@ const Body = () => {
     const observer = new IntersectionObserver(
       (entries) => {
         const entry = entries[0];
-        setIsInView(entry.isIntersecting);
+        // Solo actualiza el estado si el elemento está en vista y aún no se ha activado
+        if (entry.isIntersecting && !isInView) {
+          setIsInView(true);
+        }
       },
       {
-        root: null, // Use the viewport as the container
+        root: null,
         rootMargin: "0px",
-        threshold: 0.1, // Adjust this value to control when the element is considered "in view"
+        threshold: 0.1,
       }
     );
 
@@ -34,19 +37,20 @@ const Body = () => {
         observer.unobserve(elementRef.current);
       }
     };
-  }, []);
+  }, [isInView]);
 
   return (
     <section className={classes["container-body"]}>
       <h1
-        className={`${poppins.className} ${
-          isInView ? classes["faden-up"] : ""
-        }`}
+        className={`${poppins.className} ${isInView ? "faden-up" : ""}`}
         ref={elementRef}
       >
         Proyectos
       </h1>
-      <div className={classes.dividor} />
+      <div
+        className={classes.dividor}
+        style={{ width: isInView ? "100%" : "0%" }}
+      />
       <div className={classes["container-project"]}>
         <div className={classes.project}>
           <div>

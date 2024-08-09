@@ -1,10 +1,11 @@
-import { Body, Home } from "@/components";
+import { Body, Home, Knowledge } from "@/components";
 
 export default function Page() {
   return (
     <main>
       <Home />
-      <Body/>
+      <Body />
+      <Knowledge />
     </main>
   );
 }

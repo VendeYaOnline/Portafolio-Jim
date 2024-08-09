@@ -10,6 +10,7 @@
 .container-body > h1 {
   font-size: 40px;
   margin-bottom: 20px;
+  color: #5d8a84;
 }
 
 .container-project {
@@ -38,9 +39,9 @@
 
 .dividor {
   height: 1px;
-  background-color: black;
-  width: 100%;
+  background-color: #5d8a84;
   margin-bottom: 50px;
+  transition: 1.5s ease-in;
 }
 
 .dividor-2 {
@@ -89,22 +90,6 @@
   background-color: rgb(61, 60, 60);
 }
 
-.faden-up {
-  transform: translateY(-20px); /* Inicia por encima de la posición final */
-  opacity: 0;
-  animation: faden 1s ease-in forwards; /* Agrega 'forwards' para que la animación se quede en el estado final */
-}
-
-@keyframes faden {
-  0% {
-    transform: translateY(-20px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0); /* Termina en la posición final */
-    opacity: 1;
-  }
-}
 @media (max-width: 1605px) {
   .image-image-web {
     display: none;
@@ -147,5 +132,12 @@
 
   .image-image-mobil {
     margin: auto;
+  }
+}
+
+@media (max-width: 694px) {
+  .container-body > h1 {
+    text-align: center;
+    font-size: 30px;
   }
 }

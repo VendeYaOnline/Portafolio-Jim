@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.faden-up {
+  transform: translateY(-20px); /* Inicia por encima de la posición final */
+  opacity: 0;
+  animation: faden 1s ease-in forwards; /* Agrega 'forwards' para que la animación se quede en el estado final */
+}
+
+@keyframes faden {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0); /* Termina en la posición final */
+    opacity: 1;
+  }
+}
