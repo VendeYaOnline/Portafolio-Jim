@@ -5,6 +5,7 @@ import Image from "next/image";
 import classes from "./Home.module.css";
 import ImageHeader from "/public/image-header.jpg";
 import { Poppins } from "next/font/google";
+import Menu from "../menu/Menu";
 const poppins = Poppins({ subsets: ["latin"], weight: "500" });
 
 const Home = () => {
@@ -23,6 +24,7 @@ const Home = () => {
 
   return (
     <section className={classes["container-home"]}>
+      <Menu/>
       <div className={classes["container-text"]}>
         <h1 className={`${poppins.className} ${classes["home-text"]}`}>
           Diseñando espacios,

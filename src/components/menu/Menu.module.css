@@ -1,0 +1,92 @@
+.container-menu {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.menu-web {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+.menu-mobil {
+  position: absolute;
+  width: 500px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+  font-size: 20px;
+  color: white;
+  display: none;
+}
+
+.container-menu > ul > li {
+  position: relative;
+}
+
+.container-menu > ul > li::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  bottom: 0px;
+  background-color: white;
+  height: 1px;
+  transition: width 0.3s ease-in-out;
+}
+
+.container-menu > ul > li:hover::before {
+  width: 100%;
+}
+
+.button-contact {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  padding: 5px 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: 0.3s ease-in-out;
+}
+
+.button-contact:hover {
+  background: rgba(255, 255, 255, 0.411);
+}
+
+@media (max-width: 1408px) {
+  .menu-web {
+    font-size: medium;
+  }
+}
+
+@media (max-width: 572px) {
+  .menu-web {
+    display: none;
+  }
+
+  .menu-mobil {
+    transition: 500ms ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 25px;
+    padding-top: 100px;
+    width: 250px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 0px 0px 5px 0px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}

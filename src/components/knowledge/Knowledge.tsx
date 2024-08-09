@@ -38,7 +38,7 @@ const Knowledge = () => {
   }, [isInView]);
 
   return (
-    <section className={classes["container-knowledge"]}>
+    <section className={classes["container-knowledge"]} id="knowledge">
       <h1
         className={`${poppins.className} ${isInView ? "faden-up" : ""}`}
         ref={elementRef}

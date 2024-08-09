@@ -8,6 +8,10 @@
   animation: faden 1s ease-in forwards; /* Agrega 'forwards' para que la animación se quede en el estado final */
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 @keyframes faden {
   0% {
     transform: translateY(-20px);

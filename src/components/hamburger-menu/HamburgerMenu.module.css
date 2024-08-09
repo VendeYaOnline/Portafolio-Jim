@@ -1,0 +1,52 @@
+.container-menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+  margin-left: 20px;
+  opacity: 0;
+}
+
+.span {
+  width: 40px;
+  height: 3px;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  transition: 500ms ease;
+}
+
+.first-span-disabled {
+  top: 0px;
+}
+
+.first-span-active {
+  top: 15px;
+  opacity: 0;
+}
+
+.second-span-disabled {
+  top: 0px;
+}
+
+.second-span-active {
+  transform: rotate(135deg);
+}
+
+.third-span-disabled {
+  bottom: 0px;
+}
+
+.third-span-active {
+  bottom: 15px;
+  transform: rotate(40deg);
+}
+
+@media (max-width: 572px) {
+  .container-menu {
+    opacity: 1;
+    cursor: pointer;
+    z-index: 100;
+  }
+}
