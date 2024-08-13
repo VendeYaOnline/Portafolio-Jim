@@ -1,15 +1,15 @@
 "use client";
 
 import Image from "next/image";
-import classes from "./ProcessExecuted.module.css";
+import classes from "./ConstructionPlans.module.css";
 import { Poppins } from "next/font/google";
 import { useEffect, useRef, useState } from "react";
 const poppins = Poppins({ subsets: ["latin"], weight: "500" });
-import Construction1 from "/public/construction/construction-1.jpg";
-import Construction2 from "/public/construction/construction-2.jpg";
-import Construction3 from "/public/construction/construction-3.jpg";
+import Plano1 from "/public/planos/plano-1.png";
+import Plano2 from "/public/planos/plano-2.png";
+import Plano3 from "/public/planos/plano-3.png";
 
-const ProcessExecuted = () => {
+const ConstructionPlans = () => {
   const [isInView, setIsInView] = useState(false);
   const elementRef = useRef<HTMLDivElement>(null);
 
@@ -46,7 +46,7 @@ const ProcessExecuted = () => {
         className={`${poppins.className} ${isInView ? "faden-up" : ""}`}
         ref={elementRef}
       >
-        Proceso de construcción
+        Proceso de planos
       </h1>
       <div
         className={classes.dividor}
@@ -61,19 +61,19 @@ const ProcessExecuted = () => {
       <br />
       <div className={classes.galery}>
         <div className={classes["card-image"]}>
-          <Image src={Construction1} alt="s" />
+          <Image src={Plano1} alt="s" />
         </div>
 
         <div className={classes["card-image"]}>
-          <Image src={Construction2} alt="s" />
+          <Image src={Plano2} alt="s" />
         </div>
 
         <div className={classes["card-image"]}>
-          <Image src={Construction3} alt="s" />
+          <Image src={Plano3} alt="s" />
         </div>
       </div>
     </section>
   );
 };
 
-export default ProcessExecuted;
+export default ConstructionPlans;

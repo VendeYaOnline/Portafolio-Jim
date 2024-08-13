@@ -1,12 +1,19 @@
-import { DesignProcess, Home, ConstructionProcess, ProcessExecuted } from "@/components";
+import {
+  DesignProcess,
+  Home,
+  ConstructionPlans,
+  ProcessExecuted,
+  Results,
+} from "@/components";
 
 export default function Page() {
   return (
     <main>
       <Home />
+      <ConstructionPlans />
       <DesignProcess />
-      <ConstructionProcess />
       <ProcessExecuted />
+      <Results />
     </main>
   );
 }
