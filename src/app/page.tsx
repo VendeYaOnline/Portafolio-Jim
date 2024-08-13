@@ -1,11 +1,12 @@
-import { Body, Home, Knowledge } from "@/components";
+import { DesignProcess, Home, ConstructionProcess, ProcessExecuted } from "@/components";
 
 export default function Page() {
   return (
     <main>
       <Home />
-      <Body />
-      <Knowledge />
+      <DesignProcess />
+      <ConstructionProcess />
+      <ProcessExecuted />
     </main>
   );
 }

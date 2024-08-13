@@ -1,12 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import classes from "./Knowledge.module.css";
+import classes from "./ProcessExecuted.module.css";
 import { Poppins } from "next/font/google";
 import { useEffect, useRef, useState } from "react";
 const poppins = Poppins({ subsets: ["latin"], weight: "500" });
 
-const Knowledge = () => {
+const ProcessExecuted = () => {
   const [isInView, setIsInView] = useState(false);
   const elementRef = useRef<HTMLDivElement>(null);
 
@@ -43,7 +43,7 @@ const Knowledge = () => {
         className={`${poppins.className} ${isInView ? "faden-up" : ""}`}
         ref={elementRef}
       >
-        Conocimientos
+        Proceso ejecutado
       </h1>
       <div
         className={classes.dividor}
@@ -188,4 +188,4 @@ const Knowledge = () => {
   );
 };
 
-export default Knowledge;
+export default ProcessExecuted;

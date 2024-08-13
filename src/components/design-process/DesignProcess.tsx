@@ -1,14 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import classes from "./Body.module.css";
+import classes from "./DesignProcess.module.css";
 import Poster from "/public/poster.jpg";
 import { Poppins } from "next/font/google";
 import { ChevronRight } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 const poppins = Poppins({ subsets: ["latin"], weight: "500" });
 
-const Body = () => {
+const DesignProcess = () => {
   const [isInView, setIsInView] = useState(false);
   const elementRef = useRef<HTMLDivElement>(null);
 
@@ -191,4 +191,4 @@ const Body = () => {
   );
 };
 
-export default Body;
+export default DesignProcess;

@@ -1,7 +1,7 @@
 import Home from "./home/Home";
-import Body from "./body/Body";
-import Knowledge from "./knowledge/Knowledge";
-import { Menu } from "lucide-react";
+import ConstructionProcess from "./construction-process/ConstructionProcess";
 import HamburgerMenu from "./hamburger-menu/HamburgerMenu";
+import ProcessExecuted from "./process-executed/ProcessExecuted";
+import DesignProcess from "./design-process/DesignProcess";
 
-export { Home, Body, Knowledge, Menu, HamburgerMenu };
+export { Home, DesignProcess, ConstructionProcess, HamburgerMenu, ProcessExecuted };
