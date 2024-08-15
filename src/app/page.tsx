@@ -4,6 +4,7 @@ import {
   ConstructionPlans,
   ProcessExecuted,
   Results,
+  Footer,
 } from "@/components";
 
 export default function Page() {
@@ -14,6 +15,7 @@ export default function Page() {
       <DesignProcess />
       <ProcessExecuted />
       <Results />
+      <Footer/>
     </main>
   );
 }

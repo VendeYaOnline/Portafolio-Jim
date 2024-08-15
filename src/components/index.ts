@@ -4,6 +4,7 @@ import HamburgerMenu from "./hamburger-menu/HamburgerMenu";
 import ProcessExecuted from "./process-executed/ProcessExecuted";
 import DesignProcess from "./design-process/DesignProcess";
 import Results from "./results/Results";
+import Footer from "./footer/Footer";
 
 export {
   Home,
@@ -12,4 +13,5 @@ export {
   HamburgerMenu,
   ProcessExecuted,
   Results,
+  Footer,
 };
