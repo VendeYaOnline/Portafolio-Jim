@@ -61,14 +61,14 @@ const ConstructionPlans = () => {
       <br />
       <div className={classes.galery}>
         <div className={classes["card-image"]}>
-          <Image src={Plano2} alt="s" />
+          <Image src={Plano2} alt="imagen" />
         </div>
         <div className={classes["card-image"]}>
-          <Image src={Plano1} alt="s" />
+          <Image src={Plano1} alt="imagen" />
         </div>
 
         <div className={classes["card-image"]}>
-          <Image src={Plano3} alt="s" />
+          <Image src={Plano3} alt="imagen" />
         </div>
       </div>
     </section>

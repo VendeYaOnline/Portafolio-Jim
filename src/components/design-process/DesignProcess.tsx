@@ -51,7 +51,7 @@ const DesignProcess = () => {
         className={`${poppins.className} ${isInView ? "faden-up" : ""}`}
         ref={elementRef}
       >
-        Proceso de renders
+        2. Proceso de renders
       </h1>
       <div
         className={classes.dividor}
@@ -67,35 +67,35 @@ const DesignProcess = () => {
       <br />
       <div className={classes.galery}>
         <div className={classes["card-image"]}>
-          <Image src={Render1} alt="s" />
+          <Image src={Render1} alt="imagen" />
         </div>
 
         <div className={classes["card-image"]}>
-          <Image src={Render2} alt="s" />
+          <Image src={Render2} alt="imagen" />
         </div>
 
         <div className={classes["card-image"]}>
-          <Image src={Render3} alt="s" />
+          <Image src={Render3} alt="imagen" />
         </div>
 
         <div className={classes["card-image"]}>
-          <Image src={Render4} alt="s" />
+          <Image src={Render4} alt="imagen" />
         </div>
 
         <div className={classes["card-image"]}>
-          <Image src={Render5} alt="s" />
+          <Image src={Render5} alt="imagen" />
         </div>
 
         <div className={classes["card-image"]}>
-          <Image src={Render6} alt="s" />
+          <Image src={Render6} alt="imagen" />
         </div>
 
         <div className={classes["card-image"]}>
-          <Image src={Render7} alt="s" />
+          <Image src={Render7} alt="imagen" />
         </div>
 
         <div className={classes["card-image"]}>
-          <Image src={Render8} alt="s" />
+          <Image src={Render8} alt="imagen" />
         </div>
       </div>
     </section>

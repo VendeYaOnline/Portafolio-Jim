@@ -50,7 +50,7 @@ const ProcessExecuted = () => {
         className={`${poppins.className} ${isInView ? "faden-up" : ""}`}
         ref={elementRef}
       >
-        Proceso de construcción
+        3. Proceso de construcción
       </h1>
       <div
         className={classes.dividor}
@@ -65,31 +65,31 @@ const ProcessExecuted = () => {
       <br />
       <div className={classes.galery}>
         <div className={classes["card-image"]}>
-          <Image src={Construction1} alt="s" />
+          <Image src={Construction1} alt="imagen" />
         </div>
 
         <div className={classes["card-image"]}>
-          <Image src={Construction2} alt="s" />
+          <Image src={Construction2} alt="imagen" />
         </div>
 
         <div className={classes["card-image"]}>
-          <Image src={Construction3} alt="s" />
+          <Image src={Construction3} alt="imagen" />
         </div>
 
         <div className={classes["card-image"]}>
-          <Image src={Construction4} alt="s" />
+          <Image src={Construction4} alt="imagen" />
         </div>
 
         <div className={classes["card-image"]}>
-          <Image src={Construction5} alt="s" />
+          <Image src={Construction5} alt="imagen" />
         </div>
 
         <div className={classes["card-image"]}>
-          <Image src={Construction6} alt="s" />
+          <Image src={Construction6} alt="imagen" />
         </div>
 
         <div className={classes["card-image"]}>
-          <Image src={Construction7} alt="s" />
+          <Image src={Construction7} alt="imagen" />
         </div>
       </div>
     </section>

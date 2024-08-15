@@ -46,7 +46,7 @@ const Results = () => {
         className={`${poppins.className} ${isInView ? "faden-up" : ""}`}
         ref={elementRef}
       >
-        Resultado final
+        4. Resultado final
       </h1>
       <div
         className={classes.dividor}
@@ -61,15 +61,15 @@ const Results = () => {
       <br />
       <div className={classes.galery}>
         <div className={classes["card-image"]}>
-          <Image src={Result1} alt="s" />
+          <Image src={Result1} alt="imagen" />
         </div>
 
         <div className={classes["card-image"]}>
-          <Image src={Result2} alt="s" />
+          <Image src={Result2} alt="imagen" />
         </div>
 
         <div className={classes["card-image"]}>
-          <Image src={Result3} alt="s" />
+          <Image src={Result3} alt="imagen" />
         </div>
       </div>
     </section>
