@@ -5,6 +5,11 @@ import classes from "./DesignProcess.module.css";
 import Render1 from "/public/renders/render-1.jpg";
 import Render2 from "/public/renders/render-2.jpg";
 import Render3 from "/public/renders/render-3.jpg";
+import Render4 from "/public/renders/render-4.jpg";
+import Render5 from "/public/renders/render-5.jpg";
+import Render6 from "/public/renders/render-6.jpg";
+import Render7 from "/public/renders/render-7.jpg";
+import Render8 from "/public/renders/render-8.jpg";
 import { Poppins } from "next/font/google";
 import { useEffect, useRef, useState } from "react";
 const poppins = Poppins({ subsets: ["latin"], weight: "500" });
@@ -53,7 +58,7 @@ const DesignProcess = () => {
         style={{ width: isInView ? "100%" : "0%" }}
       />
 
-      <p className="text-xl w-[60%]">
+      <p className={classes.parrafo}>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem
         obcaecati vel molestiae? Esse blanditiis consequuntur eveniet ipsam
         voluptatibus ea laborum sapiente? Iste eum a assumenda, minima adipisci
@@ -71,6 +76,26 @@ const DesignProcess = () => {
 
         <div className={classes["card-image"]}>
           <Image src={Render3} alt="s" />
+        </div>
+
+        <div className={classes["card-image"]}>
+          <Image src={Render4} alt="s" />
+        </div>
+
+        <div className={classes["card-image"]}>
+          <Image src={Render5} alt="s" />
+        </div>
+
+        <div className={classes["card-image"]}>
+          <Image src={Render6} alt="s" />
+        </div>
+
+        <div className={classes["card-image"]}>
+          <Image src={Render7} alt="s" />
+        </div>
+
+        <div className={classes["card-image"]}>
+          <Image src={Render8} alt="s" />
         </div>
       </div>
     </section>

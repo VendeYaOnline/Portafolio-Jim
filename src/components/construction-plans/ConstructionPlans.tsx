@@ -41,18 +41,18 @@ const ConstructionPlans = () => {
   }, [isInView]);
 
   return (
-    <section className={classes["container-knowledge"]} id="knowledge">
+    <section className={classes["container-knowledge"]} id="proccess">
       <h1
         className={`${poppins.className} ${isInView ? "faden-up" : ""}`}
         ref={elementRef}
       >
-        Proceso de planos
+        1. Proceso de planos
       </h1>
       <div
         className={classes.dividor}
         style={{ width: isInView ? "100%" : "0%" }}
       />
-      <p className="text-xl w-[60%]">
+      <p className={classes.parrafo}>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem
         obcaecati vel molestiae? Esse blanditiis consequuntur eveniet ipsam
         voluptatibus ea laborum sapiente? Iste eum a assumenda, minima adipisci
@@ -61,11 +61,10 @@ const ConstructionPlans = () => {
       <br />
       <div className={classes.galery}>
         <div className={classes["card-image"]}>
-          <Image src={Plano1} alt="s" />
-        </div>
-
-        <div className={classes["card-image"]}>
           <Image src={Plano2} alt="s" />
+        </div>
+        <div className={classes["card-image"]}>
+          <Image src={Plano1} alt="s" />
         </div>
 
         <div className={classes["card-image"]}>

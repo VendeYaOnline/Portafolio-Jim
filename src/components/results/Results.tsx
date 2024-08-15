@@ -52,7 +52,7 @@ const Results = () => {
         className={classes.dividor}
         style={{ width: isInView ? "100%" : "0%" }}
       />
-      <p className="text-xl w-[60%]">
+      <p className={classes.parrafo}>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem
         obcaecati vel molestiae? Esse blanditiis consequuntur eveniet ipsam
         voluptatibus ea laborum sapiente? Iste eum a assumenda, minima adipisci

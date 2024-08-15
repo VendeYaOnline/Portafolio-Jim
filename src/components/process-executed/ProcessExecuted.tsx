@@ -8,6 +8,10 @@ const poppins = Poppins({ subsets: ["latin"], weight: "500" });
 import Construction1 from "/public/construction/construction-1.jpg";
 import Construction2 from "/public/construction/construction-2.jpg";
 import Construction3 from "/public/construction/construction-3.jpg";
+import Construction4 from "/public/construction/construction-4.jpg";
+import Construction5 from "/public/construction/construction-5.jpg";
+import Construction6 from "/public/construction/construction-6.jpg";
+import Construction7 from "/public/construction/construction-7.jpg";
 
 const ProcessExecuted = () => {
   const [isInView, setIsInView] = useState(false);
@@ -52,7 +56,7 @@ const ProcessExecuted = () => {
         className={classes.dividor}
         style={{ width: isInView ? "100%" : "0%" }}
       />
-      <p className="text-xl w-[60%]">
+      <p className={classes.parrafo}>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem
         obcaecati vel molestiae? Esse blanditiis consequuntur eveniet ipsam
         voluptatibus ea laborum sapiente? Iste eum a assumenda, minima adipisci
@@ -70,6 +74,22 @@ const ProcessExecuted = () => {
 
         <div className={classes["card-image"]}>
           <Image src={Construction3} alt="s" />
+        </div>
+
+        <div className={classes["card-image"]}>
+          <Image src={Construction4} alt="s" />
+        </div>
+
+        <div className={classes["card-image"]}>
+          <Image src={Construction5} alt="s" />
+        </div>
+
+        <div className={classes["card-image"]}>
+          <Image src={Construction6} alt="s" />
+        </div>
+
+        <div className={classes["card-image"]}>
+          <Image src={Construction7} alt="s" />
         </div>
       </div>
     </section>

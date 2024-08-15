@@ -24,11 +24,11 @@ const Menu = () => {
       <HamburgerMenu active={active} togleMenu={togleMenu} />
       <ul className={classes["menu-web"]}>
         <li className={poppins.className}>
-          <Link href="#projects">Proyectos</Link>
+          <Link href={"#proccess"}>Proceso</Link>
         </li>
 
         <li className={poppins.className}>
-          <Link href={"#knowledge"}>Conociminetos</Link>
+          <Link href={"#proccess"}>Acerca de</Link>
         </li>
 
         <Link href={"#"}>
@@ -38,11 +38,7 @@ const Menu = () => {
 
       <ul className={classes["menu-mobil"]} style={{ left: active ? 0 : -250 }}>
         <li className={poppins.className}>
-          <Link href="#projects">Proyectos</Link>
-        </li>
-
-        <li className={poppins.className}>
-          <Link href={"#knowledge"}>Conociminetos</Link>
+          <Link href={"#proccess"}>Proceso</Link>
         </li>
 
         <Link href={"#"}>
