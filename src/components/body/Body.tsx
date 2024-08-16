@@ -59,10 +59,11 @@ const Body = () => {
           <div>
             <h2 className={poppins.className}>1. Diseño de planos</h2>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut
-              alias obcaecati aspernatur sequi voluptatibus officiis accusantium
-              nesciunt sed libero voluptate tenetur quia, distinctio laborum
-              ratione debitis sapiente dicta est quibusdam!
+              En esta etapa, me dedico a la planificación detallada del diseño
+              arquitectónico. Cada línea y cada medida se trazan con precisión
+              para asegurar que el proyecto final cumpla con las expectativas
+              estéticas y funcionales. Este proceso es fundamental para
+              establecer una base sólida antes de pasar a la siguiente fase.
             </p>
             <button className={classes["button-project"]}>
               <div>Ver trabajo</div>
@@ -71,14 +72,14 @@ const Body = () => {
           </div>
           <Image
             src={Plano1}
-            alt="Poryecto-1"
+            alt="Plano"
             width={300}
             height={300}
             className={classes["image-image-mobil"]}
           />
           <Image
             src={Plano1}
-            alt="Poryecto-1"
+            alt="Plano"
             width={400}
             height={400}
             className={classes["image-image-web"]}
@@ -89,10 +90,12 @@ const Body = () => {
           <div>
             <h2 className={poppins.className}>2. Diseño de render</h2>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut
-              alias obcaecati aspernatur sequi voluptatibus officiis accusantium
-              nesciunt sed libero voluptate tenetur quia, distinctio laborum
-              ratione debitis sapiente dicta est quibusdam!
+              Después de completar los planos, me enfoco en la creación de
+              renders realistas. Estos renders permiten visualizar el proyecto
+              con todos sus detalles, proporcionando una imagen clara de cómo se
+              verá el resultado final. Es una herramienta esencial para prever
+              ajustes y garantizar que el diseño se alinee con la visión del
+              cliente.
             </p>
             <button className={classes["button-project"]}>
               <div>Ver trabajo</div>
@@ -101,14 +104,14 @@ const Body = () => {
           </div>
           <Image
             src={Render1}
-            alt="Poryecto-1"
+            alt="Render"
             width={300}
             height={300}
             className={classes["image-image-mobil"]}
           />
           <Image
             src={Render1}
-            alt="Poryecto-1"
+            alt="Render"
             width={400}
             height={400}
             className={classes["image-image-web"]}
@@ -122,10 +125,11 @@ const Body = () => {
           <div>
             <h2 className={poppins.className}>3. Diseño de construnción</h2>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut
-              alias obcaecati aspernatur sequi voluptatibus officiis accusantium
-              nesciunt sed libero voluptate tenetur quia, distinctio laborum
-              ratione debitis sapiente dicta est quibusdam!
+              En esta fase, se da vida al diseño trazado en los planos. Con una
+              ejecución meticulosa y atención al detalle, se asegura que cada
+              aspecto de la construcción se alinee con el diseño deseado. Este
+              proceso es donde la visión comienza a materializarse, convirtiendo
+              las ideas en una estructura tangible.
             </p>
             <button className={classes["button-project"]}>
               <div>Ver trabajo</div>
@@ -134,14 +138,14 @@ const Body = () => {
           </div>
           <Image
             src={Construction1}
-            alt="Poryecto-1"
+            alt="Construción"
             width={300}
             height={300}
             className={classes["image-image-mobil"]}
           />
           <Image
             src={Construction1}
-            alt="Poryecto-1"
+            alt="Construción"
             width={400}
             height={400}
             className={classes["image-image-web"]}
@@ -152,10 +156,10 @@ const Body = () => {
           <div>
             <h2 className={poppins.className}>4. Resultado final</h2>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut
-              alias obcaecati aspernatur sequi voluptatibus officiis accusantium
-              nesciunt sed libero voluptate tenetur quia, distinctio laborum
-              ratione debitis sapiente dicta est quibusdam!
+              Finalmente, llega el momento en que el cliente puede ver hecho
+              realidad el hogar o proyecto de sus sueños. Cada detalle ha sido
+              cuidadosamente considerado y ejecutado, culminando en un espacio
+              que no solo cumple, sino que supera las expectativas.
             </p>
             <button className={classes["button-project"]}>
               <div>Ver trabajo</div>
@@ -164,14 +168,14 @@ const Body = () => {
           </div>
           <Image
             src={Result1}
-            alt="Poryecto-1"
+            alt="Resultado"
             width={300}
             height={300}
             className={classes["image-image-mobil"]}
           />
           <Image
             src={Result1}
-            alt="Poryecto-1"
+            alt="Resultado"
             width={400}
             height={400}
             className={classes["image-image-web"]}
