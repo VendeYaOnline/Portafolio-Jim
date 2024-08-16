@@ -105,14 +105,14 @@
   }
 }
 
-@media (max-width: 1402px) {
+@media (max-width: 1868px) {
   .project {
     flex-direction: column;
     align-items: flex-start;
   }
 }
 
-@media (max-width: 772px) {
+@media (max-width: 922px) {
   .container-project {
     flex-wrap: wrap;
   }

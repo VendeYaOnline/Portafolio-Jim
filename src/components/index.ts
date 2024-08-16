@@ -7,6 +7,7 @@ import Results from "./results/Results";
 import Footer from "./footer/Footer";
 import Body from "./body/Body";
 import Services from "./services/Services";
+import About from "./about/About";
 
 export {
   Home,
@@ -18,4 +19,5 @@ export {
   Footer,
   Body,
   Services,
+  About,
 };

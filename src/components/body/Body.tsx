@@ -4,7 +4,7 @@ import Image from "next/image";
 import classes from "./Body.module.css";
 import Plano1 from "/public/planos/plano-2.png";
 import Render1 from "/public/renders/render-7.jpg";
-import Construction1 from "/public/construction/construction-5.jpg";
+import Construction1 from "/public/construction/construction-3.jpg";
 import Result1 from "/public/results/result-1.jpg";
 import { Poppins } from "next/font/google";
 import { ChevronRight } from "lucide-react";

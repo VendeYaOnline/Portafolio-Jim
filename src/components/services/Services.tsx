@@ -7,7 +7,7 @@ import classes from "./Services.module.css";
 import { Poppins } from "next/font/google";
 import Servicio1 from "/public/planos/plano.jpg";
 import Servicio2 from "/public/planos/render.jpg";
-import Servicio3 from "/public/planos/medida.jpg";
+import Servicio3 from "/public/planos/supervisor.jpg";
 
 const Services = () => {
   const [isInView, setIsInView] = useState(false);
@@ -96,12 +96,12 @@ const Services = () => {
             style={{ objectFit: "cover" }}
           />
           <div className={classes["service-content"]}>
-            <h2 className={poppins.className}>Toma de medidas</h2>
+            <h2 className={poppins.className}>Supervisor de obras</h2>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
-              totam, alias repellendus ipsum ex dolorum impedit doloribus
-              dolorem ut cum porro fuga tempora reiciendis magnam in id
-              delectus, excepturi saepe.
+              Aunque mi enfoque principal no es la supervisión, cuento con
+              experiencia en supervisar obras, asegurándome de que cada fase del
+              proyecto se realice de acuerdo a los planos y especificaciones
+              técnicas.
             </p>
           </div>
         </div>
