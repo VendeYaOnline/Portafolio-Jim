@@ -5,6 +5,7 @@ import ProcessExecuted from "./process-executed/ProcessExecuted";
 import DesignProcess from "./design-process/DesignProcess";
 import Results from "./results/Results";
 import Footer from "./footer/Footer";
+import Body from "./body/Body";
 
 export {
   Home,
@@ -14,4 +15,5 @@ export {
   ProcessExecuted,
   Results,
   Footer,
+  Body
 };

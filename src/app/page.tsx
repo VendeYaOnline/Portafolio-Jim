@@ -5,17 +5,20 @@ import {
   ProcessExecuted,
   Results,
   Footer,
+  Body,
 } from "@/components";
 
 export default function Page() {
   return (
     <main>
       <Home />
-      <ConstructionPlans />
+      {/*       <ConstructionPlans />
       <DesignProcess />
       <ProcessExecuted />
       <Results />
-      <Footer/>
+    */}
+      <Body />
+      <Footer />
     </main>
   );
 }

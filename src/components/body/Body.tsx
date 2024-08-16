@@ -2,7 +2,10 @@
 
 import Image from "next/image";
 import classes from "./Body.module.css";
-import Poster from "/public/poster.jpg";
+import Plano1 from "/public/planos/plano-2.png";
+import Render1 from "/public/renders/render-7.jpg";
+import Construction1 from "/public/construction/construction-5.jpg";
+import Result1 from "/public/results/result-1.jpg";
 import { Poppins } from "next/font/google";
 import { ChevronRight } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
@@ -45,7 +48,7 @@ const Body = () => {
         className={`${poppins.className} ${isInView ? "faden-up" : ""}`}
         ref={elementRef}
       >
-        Proceso de diseño 
+        Proceso de desarrollo
       </h1>
       <div
         className={classes.dividor}
@@ -54,7 +57,7 @@ const Body = () => {
       <div className={classes["container-project"]}>
         <div className={classes.project}>
           <div>
-            <h2 className={poppins.className}>Render</h2>
+            <h2 className={poppins.className}>1. Diseño de planos</h2>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut
               alias obcaecati aspernatur sequi voluptatibus officiis accusantium
@@ -62,23 +65,19 @@ const Body = () => {
               ratione debitis sapiente dicta est quibusdam!
             </p>
             <button className={classes["button-project"]}>
-              <div>Ver</div>
+              <div>Ver trabajo</div>
               <ChevronRight size={20} className={classes["icon-button"]} />
             </button>
           </div>
           <Image
-            src={
-              "https://assets.lummi.ai/assets/QmVB9nNLq9sVr39iJzTGTDs498RAbTyMuZQN3S9yjw1qW4?auto=format&w=1500"
-            }
+            src={Plano1}
             alt="Poryecto-1"
             width={300}
             height={300}
             className={classes["image-image-mobil"]}
           />
           <Image
-            src={
-              "https://assets.lummi.ai/assets/QmVB9nNLq9sVr39iJzTGTDs498RAbTyMuZQN3S9yjw1qW4?auto=format&w=1500"
-            }
+            src={Plano1}
             alt="Poryecto-1"
             width={400}
             height={400}
@@ -88,7 +87,7 @@ const Body = () => {
 
         <div className={classes.project}>
           <div>
-            <h2 className={poppins.className}>Render</h2>
+            <h2 className={poppins.className}>2. Diseño de render</h2>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut
               alias obcaecati aspernatur sequi voluptatibus officiis accusantium
@@ -96,23 +95,19 @@ const Body = () => {
               ratione debitis sapiente dicta est quibusdam!
             </p>
             <button className={classes["button-project"]}>
-              <div>Ver</div>
+              <div>Ver trabajo</div>
               <ChevronRight size={20} className={classes["icon-button"]} />
             </button>
           </div>
           <Image
-            src={
-              "https://assets.lummi.ai/assets/QmNQv79gNXSTS8VERJe8DDybh1pzgwZ6WVi7Zw79UyQc4W?auto=format&w=1500"
-            }
+            src={Render1}
             alt="Poryecto-1"
             width={300}
             height={300}
             className={classes["image-image-mobil"]}
           />
           <Image
-            src={
-              "https://assets.lummi.ai/assets/QmNQv79gNXSTS8VERJe8DDybh1pzgwZ6WVi7Zw79UyQc4W?auto=format&w=1500"
-            }
+            src={Render1}
             alt="Poryecto-1"
             width={400}
             height={400}
@@ -125,7 +120,7 @@ const Body = () => {
       <div className={classes["container-project"]}>
         <div className={classes.project}>
           <div>
-            <h2 className={poppins.className}>Render</h2>
+            <h2 className={poppins.className}>3. Diseño de construnción</h2>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut
               alias obcaecati aspernatur sequi voluptatibus officiis accusantium
@@ -133,19 +128,19 @@ const Body = () => {
               ratione debitis sapiente dicta est quibusdam!
             </p>
             <button className={classes["button-project"]}>
-              <div>Ver</div>
+              <div>Ver trabajo</div>
               <ChevronRight size={20} className={classes["icon-button"]} />
             </button>
           </div>
           <Image
-            src={Poster}
+            src={Construction1}
             alt="Poryecto-1"
             width={300}
             height={300}
             className={classes["image-image-mobil"]}
           />
           <Image
-            src={Poster}
+            src={Construction1}
             alt="Poryecto-1"
             width={400}
             height={400}
@@ -155,7 +150,7 @@ const Body = () => {
 
         <div className={classes.project}>
           <div>
-            <h2 className={poppins.className}>Render</h2>
+            <h2 className={poppins.className}>4. Resultado final</h2>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut
               alias obcaecati aspernatur sequi voluptatibus officiis accusantium
@@ -163,23 +158,19 @@ const Body = () => {
               ratione debitis sapiente dicta est quibusdam!
             </p>
             <button className={classes["button-project"]}>
-              <div>Ver</div>
+              <div>Ver trabajo</div>
               <ChevronRight size={20} className={classes["icon-button"]} />
             </button>
           </div>
           <Image
-            src={
-              "https://assets.lummi.ai/assets/QmUwUyXCU9615fYAUo3sBjYMT8ZhTJrbzRXhgV7qYrahoK?auto=format&w=1500"
-            }
+            src={Result1}
             alt="Poryecto-1"
             width={300}
             height={300}
             className={classes["image-image-mobil"]}
           />
           <Image
-            src={
-              "https://assets.lummi.ai/assets/QmUwUyXCU9615fYAUo3sBjYMT8ZhTJrbzRXhgV7qYrahoK?auto=format&w=1500"
-            }
+            src={Result1}
             alt="Poryecto-1"
             width={400}
             height={400}
