@@ -7,6 +7,7 @@ import {
   Footer,
   Body,
   Services,
+  About,
 } from "@/components";
 
 export default function Page() {
@@ -20,6 +21,7 @@ export default function Page() {
     */}
       <Services />
       <Body />
+      <About />
       <Footer />
     </main>
   );
