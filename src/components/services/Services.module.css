@@ -1,0 +1,96 @@
+.container-services {
+  width: 94%;
+  padding: 20px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.container-services > h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #5d8a84;
+}
+
+.dividor {
+  height: 1px;
+  background-color: #5d8a84;
+  margin-bottom: 50px;
+  transition: 1.5s ease-in;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.service {
+  width: 700px;
+  height: 500px;
+  background-color: white;
+  border: 1px solid rgba(187, 185, 185, 0.5);
+  box-shadow: 0px 12px 44px -23px rgba(94, 89, 94, 1);
+  border-radius: 5px;
+}
+
+.service > img {
+  width: 100%;
+  height: 50%;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.service-content {
+  padding: 20px;
+}
+
+.service-content > h2 {
+  font-size: 30px;
+}
+
+@media (max-width: 1429px) {
+  .service > img {
+    height: 40%;
+  }
+}
+
+@media (max-width: 1281px) {
+  .services {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1220px) {
+  .service-content > h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1208px) {
+  .service > img {
+    height: 30%;
+  }
+}
+
+@media (max-width: 953px) {
+  .services {
+    flex-wrap: wrap;
+  }
+
+  .service > img {
+    height: 50%;
+  }
+  .service {
+    width: 100%;
+    height: 500px;
+  }
+}
+
+@media (max-width: 482px) {
+  .service {
+    height: 100%;
+  }
+
+  .service-content > h2 {
+    margin-bottom: 10px;
+  }
+}

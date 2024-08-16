@@ -45,6 +45,7 @@ const Body = () => {
   return (
     <section className={classes["container-body"]} id="projects">
       <h1
+        id="proccess"
         className={`${poppins.className} ${isInView ? "faden-up" : ""}`}
         ref={elementRef}
       >

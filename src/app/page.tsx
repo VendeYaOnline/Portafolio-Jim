@@ -6,6 +6,7 @@ import {
   Results,
   Footer,
   Body,
+  Services,
 } from "@/components";
 
 export default function Page() {
@@ -17,6 +18,7 @@ export default function Page() {
       <ProcessExecuted />
       <Results />
     */}
+      <Services />
       <Body />
       <Footer />
     </main>
