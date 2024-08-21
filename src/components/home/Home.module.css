@@ -177,15 +177,33 @@
   }
 }
 
+@media (max-width: 1500px), (max-height: 822px) {
+  .footer-home-animation {
+    bottom: 20% !important;
+  }
+}
+
 @media (max-width: 410px), (max-height: 751px) {
   .footer-home-animation {
     bottom: -10% !important;
   }
 }
 
+@media (max-width: 1500px), (max-height: 751px) {
+  .footer-home-animation {
+    bottom: 10% !important;
+  }
+}
+
 @media (max-width: 410px), (max-height: 601px) {
   .footer-home-animation {
     bottom: -18% !important;
+  }
+}
+
+@media (max-width: 1500px), (max-height: 601px) {
+  .footer-home-animation {
+    bottom: 10% !important ;
   }
 }
 
@@ -229,11 +247,11 @@
 
 @media (max-width: 532px) {
   .footer-home-animation {
-    bottom: 5%;
+    bottom: 3%;
   }
 
   .footer-home-animation {
-    height: 400px;
+    height: 350px;
   }
 }
 
