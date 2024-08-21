@@ -56,11 +56,7 @@ const Services = () => {
 
       <div className={classes.services}>
         <div className={classes.service}>
-          <Image
-            src={Servicio1}
-            alt="diseño de planos"
-            style={{ objectFit: "cover" }}
-          />
+          <Image src={Servicio1} alt="diseño de planos" />
           <div className={classes["service-content"]}>
             <h2 className={poppins.className}>Diseño de planos</h2>
             <p>
@@ -73,11 +69,7 @@ const Services = () => {
           </div>
         </div>
         <div className={classes.service}>
-          <Image
-            src={Servicio2}
-            alt="diseño de planos"
-            style={{ objectFit: "cover" }}
-          />
+          <Image src={Servicio2} alt="diseño de planos" />
           <div className={classes["service-content"]}>
             <h2 className={poppins.className}>Diseño de renders</h2>
             <p>
@@ -90,11 +82,7 @@ const Services = () => {
           </div>
         </div>
         <div className={classes.service}>
-          <Image
-            src={Servicio3}
-            alt="diseño de planos"
-            style={{ objectFit: "cover" }}
-          />
+          <Image src={Servicio3} alt="diseño de planos" />
           <div className={classes["service-content"]}>
             <h2 className={poppins.className}>Supervisor de obras</h2>
             <p>
