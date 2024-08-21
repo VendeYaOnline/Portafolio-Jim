@@ -24,7 +24,7 @@ const Home = () => {
 
   return (
     <section className={classes["container-home"]}>
-      <Menu/>
+      <Menu />
       <div className={classes["container-text"]}>
         <h1 className={`${poppins.className} ${classes["home-text"]}`}>
           Diseñando espacios,
@@ -39,10 +39,11 @@ const Home = () => {
         className={classes["home-image"]}
       />
       <div className={classes["footer-home"]}>
-        <p className="w-[600px] mt-10">
-          Arquitecto recién graduado con experiencia en diseño y planificación
-          de espacios. Me apasiona crear entornos que mejoran la calidad de vida
-          de las personas.
+        <p className="mt-10">
+          Soy estudiante de arquitectura con experiencia laboral en el campo, lo
+          que me ha permitido combinar la teoría con la práctica y desarrollar
+          un enfoque integral en el diseño de espacios que no solo sean
+          funcionales, sino que también inspiren y conecten a las personas.
         </p>
         <button className={classes["button-contact"]}>Contactar</button>
       </div>

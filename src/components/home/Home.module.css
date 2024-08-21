@@ -20,6 +20,10 @@
   transform: scale(1);
 }
 
+.footer-home > p {
+  width: 800px;
+}
+
 .container-text {
   width: 100%;
   position: absolute;
@@ -45,7 +49,7 @@
   width: 100%;
   height: 0px;
   position: absolute;
-  bottom: 23%;
+  bottom: 20%;
   overflow: hidden;
   color: white;
   transition: 1.5s ease-out;
@@ -53,7 +57,7 @@
 }
 
 .footer-home-animation {
-  height: 200px;
+  height: 250px;
   left: 100px;
 }
 
@@ -188,13 +192,21 @@
   }
 
   .footer-home > p {
-    width: 100%;
+    width: 100% !important;
+  }
+
+  .footer-home-animation {
+    height: 280px;
   }
 }
 
 @media (max-width: 532px) {
   .footer-home-animation {
-    height: 230px;
+    bottom: 10%;
+  }
+
+  .footer-home-animation {
+    height: 400px;
   }
 }
 
@@ -204,10 +216,7 @@
   }
 
   .footer-home {
-    bottom: 100px;
-  }
-  .footer-home-animation {
-    height: 300px;
+    font-size: 16px;
   }
 }
 
@@ -225,16 +234,6 @@
   }
 }
 
-@media (max-width: 282px) {
-  .footer-home {
-    bottom: 50px;
-  }
-
-  .footer-home-animation {
-    height: 350px;
-  }
-}
-
 @media (max-width: 272px) {
   .footer-home {
     display: none;
@@ -246,6 +245,24 @@
 }
 
 /*  * RESPONSIVE MIXTAS */
+
+@media (max-width: 848px) {
+  .footer-home > p {
+    width: 500px;
+  }
+}
+
+@media (max-width: 538px) and (max-height: 869px) {
+  .footer-home {
+    bottom: 40px;
+  }
+}
+
+@media (max-width: 400px) and (max-height: 700px) {
+  .footer-home {
+    bottom: -50px !important;
+  }
+}
 
 @media (max-width: 400px) and (max-height: 741px) {
   .footer-home {
