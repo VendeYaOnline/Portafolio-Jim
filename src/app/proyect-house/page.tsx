@@ -15,7 +15,7 @@ const poppins = Poppins({ subsets: ["latin"], weight: "500" });
 const ProyectHouse = () => {
   return (
     <article className={classes["container-proyect"]}>
-      <Link href="/">
+      <Link href="/#proyects">
         <button className={classes["button-back"]}>
           <ArrowLeft color="white" />
         </button>

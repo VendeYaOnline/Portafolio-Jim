@@ -4,19 +4,23 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import HamburgerMenu from "../hamburger-menu/HamburgerMenu";
 import { useRouter } from "next/navigation";
+import { useMenu } from "@/hooks";
 const poppins = Poppins({ subsets: ["latin"], weight: "400" });
 
 const Menu = () => {
   const [active, setActive] = useState(false);
+  const { activeMenu, setActiveMenu } = useMenu();
+  const router = useRouter();
 
   const togleMenu = () => {
     setActive(!active);
   };
 
-  const router = useRouter();
-
   useEffect(() => {
-    router.replace("/");
+    if (activeMenu) {
+    } else {
+      router.replace("/");
+    }
   }, [router]);
 
   return (
@@ -27,11 +31,11 @@ const Menu = () => {
           <Link href={"#about"}>Acerca de</Link>
         </li>
         <li className={poppins.className}>
-          <Link href={"#services"}>servicios</Link>
+          <Link href={"#services"}>Servicios</Link>
         </li>
 
         <li className={poppins.className}>
-          <Link href={"#proccess"}>Proceso</Link>
+          <Link href={"#proyects"}>Proyectos</Link>
         </li>
 
         <Link href={"#"}>
@@ -44,11 +48,11 @@ const Menu = () => {
           <Link href={"#about"}>Acerca de</Link>
         </li>
         <li className={poppins.className}>
-          <Link href={"#services"}>servicios</Link>
+          <Link href={"#services"}>Servicios</Link>
         </li>
 
         <li className={poppins.className}>
-          <Link href={"#proccess"}>Proceso</Link>
+          <Link href={"#proyects"}>Proyectos</Link>
         </li>
 
         <Link href={"#"}>

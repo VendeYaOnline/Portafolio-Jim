@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import classes from "./ProyectApartaments.module.css";
 import Result1 from "/public/proyect-1/6.jpg";
@@ -5,20 +7,26 @@ import Result2 from "/public/proyect-1/7.jpg";
 import Result3 from "/public/proyect-1/8.jpg";
 import Render1 from "/public/proyect-1/1.jpg";
 import Render2 from "/public/proyect-1/2.jpg";
-import Render3 from "/public/proyect-1/render.jpg";
 import Construct1 from "/public/proyect-1/3.jpg";
 import Construct2 from "/public/proyect-1/4.jpg";
 import Construct3 from "/public/proyect-1/5.jpg";
 import { Poppins } from "next/font/google";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
+import { useMenu } from "@/hooks";
 const poppins = Poppins({ subsets: ["latin"], weight: "500" });
 
 const ProyectApartaments = () => {
+  const { setActiveMenu } = useMenu();
+
+  const activeMenu = () => {
+    setActiveMenu(true);
+  };
+
   return (
     <article className={classes["container-proyect"]}>
-      <Link href="/">
-        <button className={classes["button-back"]}>
+      <Link href="/#proyects">
+        <button className={classes["button-back"]} onClick={activeMenu}>
           <ArrowLeft color="white" />
         </button>
       </Link>
