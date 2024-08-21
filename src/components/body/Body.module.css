@@ -24,6 +24,21 @@
   gap: 20px;
 }
 
+.project-2 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  flex-direction: column;
+  gap: 20px;
+}
+.project-2 .button-project {
+  margin: auto;
+  margin-top: 20px;
+}
+
 .image-image-web {
   display: block;
 }
@@ -33,6 +48,10 @@
 }
 
 .project h2 {
+  font-size: 30px;
+}
+
+.project-2 h2 {
   font-size: 30px;
 }
 
@@ -96,6 +115,12 @@
 
   .image-image-mobil {
     display: block;
+  }
+}
+
+@media (max-width: 1597px) {
+  .project-2 {
+    width: 100%;
   }
 }
 

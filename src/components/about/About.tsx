@@ -53,10 +53,14 @@ const About = () => {
       />
 
       <div className={classes.about}>
-        <Image src={Avatar} alt="Avatar" style={{ borderRadius: 10 }} />
+        <Image
+          src={Avatar}
+          alt="Avatar"
+          style={{ borderRadius: 10 }}
+          width={500}
+        />
         <div>
-          <h1 className={poppins.className}>Estudiante de Arquitectura</h1>
-          <h2 className={poppins.className}>Grado 9</h2>
+          <h1 className={poppins.className}>Estudiante de arquitectura</h1>
           <p>
             Estoy en la etapa final de mis estudios de arquitectura y ya cuento
             con experiencia en la creación de planos, desarrollo de renders, y

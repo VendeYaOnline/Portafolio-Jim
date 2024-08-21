@@ -9,6 +9,7 @@ import Result1 from "/public/results/result-1.jpg";
 import { Poppins } from "next/font/google";
 import { ChevronRight } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 const poppins = Poppins({ subsets: ["latin"], weight: "500" });
 
 const Body = () => {
@@ -49,7 +50,7 @@ const Body = () => {
         className={`${poppins.className} ${isInView ? "faden-up" : ""}`}
         ref={elementRef}
       >
-        Proceso de desarrollo
+        Proyectos
       </h1>
       <div
         className={classes.dividor}
@@ -58,7 +59,9 @@ const Body = () => {
       <div className={classes["container-project"]}>
         <div className={classes.project}>
           <div>
-            <h2 className={poppins.className}>1. Diseño de planos</h2>
+            <h2 className={poppins.className}>
+              1. Reconstrucción y diseño de apartamentos
+            </h2>
             <p>
               En esta etapa, me dedico a la planificación detallada del diseño
               arquitectónico. Cada línea y cada medida se trazan con precisión
@@ -66,20 +69,22 @@ const Body = () => {
               estéticas y funcionales. Este proceso es fundamental para
               establecer una base sólida antes de pasar a la siguiente fase.
             </p>
-            <button className={classes["button-project"]}>
-              <div>Ver trabajo</div>
-              <ChevronRight size={20} className={classes["icon-button"]} />
-            </button>
+            <Link href="/proyect-apartaments">
+              <button className={classes["button-project"]}>
+                <div>Ver trabajo</div>
+                <ChevronRight size={20} className={classes["icon-button"]} />
+              </button>
+            </Link>
           </div>
           <Image
-            src={Plano1}
+            src={Result1}
             alt="Plano"
             width={300}
             height={300}
             className={classes["image-image-mobil"]}
           />
           <Image
-            src={Plano1}
+            src={Result1}
             alt="Plano"
             width={400}
             height={400}
@@ -122,7 +127,7 @@ const Body = () => {
       <div className={classes["dividor-2"]} />
 
       <div className={classes["container-project"]}>
-        <div className={classes.project}>
+        <div className={classes["project-2"]}>
           <div>
             <h2 className={poppins.className}>3. Diseño de construnción</h2>
             <p>
@@ -132,53 +137,24 @@ const Body = () => {
               proceso es donde la visión comienza a materializarse, convirtiendo
               las ideas en una estructura tangible.
             </p>
-            <button className={classes["button-project"]}>
-              <div>Ver trabajo</div>
-              <ChevronRight size={20} className={classes["icon-button"]} />
-            </button>
-          </div>
-          <Image
-            src={Construction1}
-            alt="Construción"
-            width={300}
-            height={300}
-            className={classes["image-image-mobil"]}
-          />
-          <Image
-            src={Construction1}
-            alt="Construción"
-            width={400}
-            height={400}
-            className={classes["image-image-web"]}
-          />
-        </div>
 
-        <div className={classes.project}>
-          <div>
-            <h2 className={poppins.className}>4. Resultado final</h2>
-            <p>
-              Finalmente, llega el momento en que el cliente puede ver hecho
-              realidad el hogar o proyecto de sus sueños. Cada detalle ha sido
-              cuidadosamente considerado y ejecutado, culminando en un espacio
-              que no solo cumple, sino que supera las expectativas.
-            </p>
             <button className={classes["button-project"]}>
               <div>Ver trabajo</div>
               <ChevronRight size={20} className={classes["icon-button"]} />
             </button>
           </div>
           <Image
-            src={Result1}
-            alt="Resultado"
-            width={300}
-            height={300}
+            src={Construction1}
+            alt="Construción"
+            width={800}
+            height={600}
             className={classes["image-image-mobil"]}
           />
           <Image
-            src={Result1}
-            alt="Resultado"
-            width={400}
-            height={400}
+            src={Construction1}
+            alt="Construción"
+            width={800}
+            height={600}
             className={classes["image-image-web"]}
           />
         </div>
