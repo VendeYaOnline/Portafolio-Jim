@@ -6,6 +6,7 @@ import classes from "./Home.module.css";
 import ImageHeader from "/public/image-header.jpg";
 import { Poppins } from "next/font/google";
 import Menu from "../menu/Menu";
+import Link from "next/link";
 const poppins = Poppins({ subsets: ["latin"], weight: "500" });
 
 const Home = () => {
@@ -45,7 +46,9 @@ const Home = () => {
           un enfoque integral en el diseño de espacios que no solo sean
           funcionales, sino que también inspiren y conecten a las personas.
         </p>
-        <button className={classes["button-contact"]}>Contactar</button>
+        <Link href="/contact">
+          <button className={classes["button-contact"]}>Contactar</button>
+        </Link>
       </div>
     </section>
   );

@@ -38,7 +38,7 @@ const Menu = () => {
           <Link href={"#proyects"}>Proyectos</Link>
         </li>
 
-        <Link href={"#"}>
+        <Link href="/contact">
           <button className={classes["button-contact"]}>Contactar</button>
         </Link>
       </ul>
@@ -55,7 +55,7 @@ const Menu = () => {
           <Link href={"#proyects"}>Proyectos</Link>
         </li>
 
-        <Link href={"#"}>
+        <Link href="/contact">
           <button className={classes["button-contact"]}>Contactar</button>
         </Link>
       </ul>
