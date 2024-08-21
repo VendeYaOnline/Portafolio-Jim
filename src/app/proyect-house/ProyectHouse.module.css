@@ -9,7 +9,7 @@
 .container-proyect > h1 {
   font-size: 40px;
   margin-bottom: 20px;
-  margin-top: 20px
+  margin-top: 20px;
 }
 
 .container-proyect > p {
@@ -25,6 +25,19 @@
 
 .button-back:hover {
   background-color: rgb(61, 61, 61);
+}
+
+.button-pdf {
+  border-radius: 5px;
+  background-color: rgb(201, 42, 42);
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  transition: 500ms ease;
+}
+
+.button-pdf:hover {
+  background-color: rgb(184, 34, 34);
 }
 
 .container-images {

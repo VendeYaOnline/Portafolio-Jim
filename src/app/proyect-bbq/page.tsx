@@ -27,6 +27,14 @@ const ProyectBBQ = () => {
         <Image src={Render2} alt="Proyecto BBQ" className="rounded-md mt-5" />
       </div>
 
+      <div className="flex">
+        <Link
+          href="https://drive.google.com/drive/folders/1Dog1H_qewGOW-tqXSET5czkaW9fWZmg2?usp=sharing"
+          target="_blank"
+        >
+          <button className={classes["button-pdf"]}>Descargar PDF</button>
+        </Link>
+      </div>
       <p className="my-5">
         Durante la fase de diseño, nuestro objetivo fue crear una zona social
         BBQ que sirviera como un espacio acogedor y funcional para el

@@ -32,6 +32,19 @@
   gap: 20px;
 }
 
+.button-pdf {
+  border-radius: 5px;
+  background-color: rgb(201, 42, 42);
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  transition: 500ms ease;
+}
+
+.button-pdf:hover {
+  background-color: rgb(184, 34, 34);
+}
+
 .container-images img {
   width: 500px;
 }

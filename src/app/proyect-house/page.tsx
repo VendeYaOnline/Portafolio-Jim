@@ -40,7 +40,14 @@ const ProyectHouse = () => {
           className="rounded-md mt-5"
         />
       </div>
-
+      <div className="flex">
+        <Link
+          href="https://drive.google.com/drive/folders/117hQ3QR5wp-KYFdoWXjBU7mnvhbdbLej?usp=sharing"
+          target="_blank"
+        >
+          <button className={classes["button-pdf"]}>Descargar PDF</button>
+        </Link>
+      </div>
       <p className="my-5">
         En la fase de diseño, transformamos un lote baldío que fue proyectado
         para un parqueadero público en un espacio habitable bien estructurado.
