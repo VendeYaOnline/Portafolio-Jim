@@ -5,9 +5,9 @@ import Image from "next/image";
 const poppins = Poppins({ subsets: ["latin"], weight: "500" });
 import classes from "./Services.module.css";
 import { Poppins } from "next/font/google";
-import Servicio1 from "/public/planos/plano.jpg";
-import Servicio2 from "/public/planos/render.jpg";
-import Servicio3 from "/public/planos/supervisor.jpg";
+import Servicio1 from "/public/services/plano.jpg";
+import Servicio2 from "/public/services/render.jpg";
+import Servicio3 from "/public/services/supervisor.jpg";
 
 const Services = () => {
   const [isInView, setIsInView] = useState(false);

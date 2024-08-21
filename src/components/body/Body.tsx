@@ -2,10 +2,10 @@
 
 import Image from "next/image";
 import classes from "./Body.module.css";
-import Plano1 from "/public/planos/plano-2.png";
-import Render1 from "/public/renders/render-7.jpg";
-import Construction1 from "/public/construction/construction-3.jpg";
-import Result1 from "/public/results/result-1.jpg";
+import Proyect1 from "/public/proyect-1/6.jpg";
+import Proyect2 from "/public/proyect-2/6.jpg";
+import Proyect3 from "/public/proyect-3/8.jpg";
+
 import { Poppins } from "next/font/google";
 import { ChevronRight } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
@@ -59,15 +59,16 @@ const Body = () => {
       <div className={classes["container-project"]}>
         <div className={classes.project}>
           <div>
-            <h2 className={poppins.className}>
-              1. Reconstrucción y diseño de apartamentos
-            </h2>
+            <h2 className={poppins.className}>1. Diseño de apartamentos</h2>
             <p>
-              En esta etapa, me dedico a la planificación detallada del diseño
-              arquitectónico. Cada línea y cada medida se trazan con precisión
-              para asegurar que el proyecto final cumpla con las expectativas
-              estéticas y funcionales. Este proceso es fundamental para
-              establecer una base sólida antes de pasar a la siguiente fase.
+              En esta etapa, trabajamos en la creación de renders detallados que
+              capturan la esencia y visión del proyecto. Estos renders nos
+              permiten visualizar con precisión cómo se verá el complejo de
+              apartamentos, asegurando que todos los detalles estén alineados
+              con las expectativas del cliente antes de avanzar a la
+              construcción. Desde la distribución de espacios hasta la selección
+              de materiales y acabados, cada render es una herramienta esencial
+              para comunicar la calidad y el diseño final.
             </p>
             <Link href="/proyect-apartaments">
               <button className={classes["button-project"]}>
@@ -77,14 +78,14 @@ const Body = () => {
             </Link>
           </div>
           <Image
-            src={Result1}
+            src={Proyect1}
             alt="Plano"
             width={300}
             height={300}
             className={classes["image-image-mobil"]}
           />
           <Image
-            src={Result1}
+            src={Proyect1}
             alt="Plano"
             width={400}
             height={400}
@@ -94,29 +95,34 @@ const Body = () => {
 
         <div className={classes.project}>
           <div>
-            <h2 className={poppins.className}>2. Diseño de render</h2>
+            <h2 className={poppins.className}>
+              2. Diseño y reconstrucción de casa
+            </h2>
             <p>
-              Después de completar los planos, me enfoco en la creación de
-              renders realistas. Estos renders permiten visualizar el proyecto
-              con todos sus detalles, proporcionando una imagen clara de cómo se
-              verá el resultado final. Es una herramienta esencial para prever
-              ajustes y garantizar que el diseño se alinee con la visión del
-              cliente.
+              El resultado final en obra negra representa el esqueleto de lo que
+              será una casa llena de vida. Entregamos una estructura sólida,
+              lista para que los futuros propietarios personalicen y completen
+              los detalles que harán de este espacio su hogar. Este proyecto no
+              solo demuestra nuestra habilidad para transformar un espacio vacío
+              en un potencial hogar, sino también nuestro compromiso con la
+              calidad en cada fase del proceso de construcción.
             </p>
-            <button className={classes["button-project"]}>
-              <div>Ver trabajo</div>
-              <ChevronRight size={20} className={classes["icon-button"]} />
-            </button>
+            <Link href="/proyect-house">
+              <button className={classes["button-project"]}>
+                <div>Ver trabajo</div>
+                <ChevronRight size={20} className={classes["icon-button"]} />
+              </button>
+            </Link>
           </div>
           <Image
-            src={Render1}
+            src={Proyect2}
             alt="Render"
             width={300}
             height={300}
             className={classes["image-image-mobil"]}
           />
           <Image
-            src={Render1}
+            src={Proyect2}
             alt="Render"
             width={400}
             height={400}
@@ -129,29 +135,33 @@ const Body = () => {
       <div className={classes["container-project"]}>
         <div className={classes["project-2"]}>
           <div>
-            <h2 className={poppins.className}>3. Diseño de construnción</h2>
+            <h2 className={poppins.className}>
+              3. Proyecto de zona social BBQ
+            </h2>
             <p>
-              En esta fase, se da vida al diseño trazado en los planos. Con una
-              ejecución meticulosa y atención al detalle, se asegura que cada
-              aspecto de la construcción se alinee con el diseño deseado. Este
-              proceso es donde la visión comienza a materializarse, convirtiendo
-              las ideas en una estructura tangible.
+              Durante la fase de diseño, nuestro objetivo fue crear una zona
+              social BBQ que sirviera como un espacio acogedor y funcional para
+              el entretenimiento y la relajación. Diseñamos un área que combina
+              confort y estilo, con una distribución que maximiza el uso del
+              espacio y fomenta la interacción social.
             </p>
 
-            <button className={classes["button-project"]}>
-              <div>Ver trabajo</div>
-              <ChevronRight size={20} className={classes["icon-button"]} />
-            </button>
+            <Link href="/proyect-bbq">
+              <button className={classes["button-project"]}>
+                <div>Ver trabajo</div>
+                <ChevronRight size={20} className={classes["icon-button"]} />
+              </button>
+            </Link>
           </div>
           <Image
-            src={Construction1}
+            src={Proyect3}
             alt="Construción"
             width={800}
             height={600}
             className={classes["image-image-mobil"]}
           />
           <Image
-            src={Construction1}
+            src={Proyect3}
             alt="Construción"
             width={800}
             height={600}

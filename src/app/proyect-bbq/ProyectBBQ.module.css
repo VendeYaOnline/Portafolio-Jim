@@ -29,7 +29,6 @@
 
 .container-images {
   display: flex;
-  align-items: center;
   gap: 20px;
 }
 
@@ -54,6 +53,7 @@
 
   .container-proyect > h1 {
     font-size: 30px;
+    margin-top: 20px;
   }
 }
 
